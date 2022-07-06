@@ -1,0 +1,43 @@
+@import 'colors';
+@import 'title';
+%table-format {
+    text-align: center;
+    padding: 10px;
+    text-align: center;
+}
+
+.show-table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    border-bottom: 1px solid $orangeRed;
+    th {
+        @extend %table-format;
+        font-size: 17px;
+        color: $title;
+        text-transform: uppercase;
+        border-bottom: 1px solid $orangeRed;
+    }
+    td {
+        @extend %table-format;
+        font-size: 17px;
+        color: $light;
+        button {
+            padding: 12px 24px;
+            border: none;
+            outline: none;
+            border-radius: 4px;
+            margin-left: 16px;
+            color: $light;
+            background-color: $blue;
+            &:hover {
+                background: $orangeRed;
+                transition: all 0.3s;
+            }
+        }
+    }
+    td:first-child {
+        color: $orangeRed;
+        font-weight: bold;
+    }
+}

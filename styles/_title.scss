@@ -1,0 +1,9 @@
+.title {
+    text-transform: uppercase;
+    color: $title;
+    padding: 20px;
+    border-bottom: 1px solid $orangeRed;
+    h5 {
+        color: $orangeRed;
+    }
+}
